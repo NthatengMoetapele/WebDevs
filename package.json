@@ -1,0 +1,22 @@
+{
+  "name": "webdevs",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NthatengMoetapele/WebDevs.git"
+  },
+  "author": "Nthateng Moetapele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NthatengMoetapele/WebDevs/issues"
+  },
+  "homepage": "https://github.com/NthatengMoetapele/WebDevs#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
