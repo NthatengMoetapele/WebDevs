@@ -1,9 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-header {
-  h1 {
-    font-size: 50px;
-    color: $color-blue-dark;
-  }
+
+.header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-blood-red, 0.9),
+      rgba($color-imperial-red, 0.5)
+    ),
+    url("/img/background-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 95vh;
+
+  // Clip image using polygon
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
 }
