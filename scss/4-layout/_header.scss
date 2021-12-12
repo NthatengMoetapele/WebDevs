@@ -1,3 +1,9 @@
 // -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
+// This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+header {
+  h1 {
+    font-size: 50px;
+    color: $color-blue-dark;
+  }
+}
