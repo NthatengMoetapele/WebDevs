@@ -459,8 +459,8 @@ h1 {
 }
 
 .header {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(102, 7, 8, 0.9)), to(rgba(229, 56, 59, 0.5))), url("/img/background-img.jpg");
-  background-image: linear-gradient(to right bottom, rgba(102, 7, 8, 0.9), rgba(229, 56, 59, 0.5)), url("/img/background-img.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(102, 7, 8, 0.9)), to(rgba(229, 56, 59, 0.5))), url("../img/background-img.jpg");
+  background-image: linear-gradient(to right bottom, rgba(102, 7, 8, 0.9), rgba(229, 56, 59, 0.5)), url("../img/background-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
