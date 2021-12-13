@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-family: "Arizona", cursive;
+    border-radius: 10rem;
+    padding: 1.5rem 4rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: auto;
+  }
+
+  // Home Page Header Buttons
+  &__header--1 {
+    color: $color-eerie-black;
+    background-color: $color-white;
+  }
+
+  &__header--2:link {
+    color: $color-white;
+    background-color: $color-blood-red;
+    text-transform: lowercase;
+  }
+
+  // Button(s) Hover Effects
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-eerie-black, 0.4);
+  }
+
+  &:active {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-eerie-black, 0.2);
+  }
+}
