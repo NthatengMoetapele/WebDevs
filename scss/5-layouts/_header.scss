@@ -2,6 +2,9 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
+// ***************************************************************************
+// HOME PAGE HEADER SECTION
+// ****************************************************************************
 .header__content {
   color: $color-white;
   position: absolute;
@@ -32,11 +35,17 @@
     // Add slide animation
     animation: dropdown--slide 2s 1s ease;
     animation-fill-mode: backwards; // Set 0% {...} animation effects
+    backface-visibility: hidden;
   }
 
   &-text {
     // Adding slide animation
     animation: dropdown--slide 2s 1s ease;
     animation-fill-mode: backwards; // Set 0% {...} animation effects
+    backface-visibility: hidden;
   }
 }
+
+// ******************************************************************************
+// END OF SECTION
+// ******************************************************************************

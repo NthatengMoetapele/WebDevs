@@ -423,7 +423,6 @@ html {
 
 body {
   color: #161a1d;
-  position: relative;
 }
 
 main {
@@ -438,13 +437,21 @@ main {
   margin-right: 1.8rem;
 }
 
+.red--text {
+  color: #e5383b;
+}
+
+.bottom--margin-small {
+  margin-bottom: 0.6rem;
+}
+
 /**
  * Basic typography style for copy text
  */
 a,
 h1,
 h2 {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "ubuntu", sans-serif;
   font-size: 2.4rem;
   letter-spacing: 0.1rem;
 }
@@ -506,6 +513,18 @@ h2 {
           box-shadow: 0 0.5rem 1rem rgba(22, 26, 29, 0.2);
 }
 
+.heading__secondary {
+  font-family: "Lato", "ubuntu", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.heading__tertiary {
+  font-family: "ubuntu", "Lato", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
 .navigation__item {
   cursor: pointer;
 }
@@ -522,6 +541,54 @@ h2 {
 
 .navigation__link:hover::after {
   width: 100%;
+}
+
+.card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.card:hover .inner__card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.inner__card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.inner__card-front, .inner__card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.inner__card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.inner__card-back {
+  background-color: #2980b9;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .navigation {
@@ -603,6 +670,8 @@ h2 {
           animation: dropdown--slide 2s 1s ease;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .heading__primary-text {
@@ -610,4 +679,14 @@ h2 {
           animation: dropdown--slide 2s 1s ease;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+/******************************************************************************
+PORTFOLIO SECTION
+*******************************************************************************/
+.section__portfolio {
+  margin-top: 8rem;
+  height: 150rem;
 }
