@@ -1,3 +1,0 @@
-## Header
-
-Something about APIs
