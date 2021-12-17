@@ -1,0 +1,61 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+// ***************************************************************************
+// HOME PAGE BUTTONS
+// ****************************************************************************
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    border-radius: 10rem;
+    padding: 1.5rem 4rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: auto;
+    backface-visibility: hidden;
+  }
+
+  // Home Page Header Buttons
+  &__header--1 {
+    color: $color-eerie-black;
+    background-color: $color-white;
+    animation: dropdown--slide 2s 1.3s;
+    animation-fill-mode: backwards;
+  }
+
+  &__header--2 {
+    color: $color-imperial-red;
+    border: 0.2rem solid $color-imperial-red;
+    text-transform: lowercase !important;
+    animation: dropdown--slide 2s 1.6s;
+    animation-fill-mode: backwards;
+
+    &:hover {
+      transform: translateY(0) !important;
+      box-shadow: none;
+      background-color: $color-imperial-red;
+      color: $color-white;
+    }
+  }
+
+  // Button(s) Hover Effects
+  &:hover {
+    transform: translateY(-0.4rem);
+    box-shadow: 0 1rem 2rem rgba($color-eerie-black, 0.4);
+  }
+
+  &:active {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-eerie-black, 0.2);
+  }
+}
+
+// ***************************************************************************
+// END OF SECTION
+// ****************************************************************************
