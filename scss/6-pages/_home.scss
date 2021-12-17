@@ -7,6 +7,31 @@ PORTFOLIO SECTION
 *******************************************************************************/
 .section__portfolio {
   margin-top: 8rem;
+  text-align: center;
+  height: 100rem;
+}
 
-  height: 150rem;
+.portfolio__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.inner__card-front {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25rem;
+
+  &--1 {
+    background-image: url("/img/portfolio/landing-pages.jpg");
+  }
+
+  &--2 {
+    background-image: url("/img/portfolio/backend-langs.jpg");
+  }
+
+  &--3 {
+    background-image: url("/img/portfolio/apis.jpg");
+  }
 }
