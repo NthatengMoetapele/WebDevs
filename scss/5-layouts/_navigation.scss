@@ -5,6 +5,7 @@
 .navigation {
   color: $color-white;
   position: relative;
+  overflow: hidden;
 
   &__background-img {
     background-image: linear-gradient(

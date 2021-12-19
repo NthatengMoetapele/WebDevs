@@ -17,21 +17,114 @@ PORTFOLIO SECTION
   gap: 3rem;
 }
 
+// CARD FRONT VIEW
 .inner__card-front {
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 0.3rem;
+}
+
+.card__picture {
+  width: 100%;
+  height: 19rem;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 25rem;
+  background-position: center center;
 
   &--1 {
     background-image: url("/img/portfolio/landing-pages.jpg");
   }
 
   &--2 {
-    background-image: url("/img/portfolio/backend-langs.jpg");
+    background-image: url("/img/portfolio/Set_of_programmers_02_02.jpg");
   }
 
   &--3 {
     background-image: url("/img/portfolio/apis.jpg");
+  }
+}
+
+.card__heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-white;
+  width: 100%;
+
+  &-span {
+    display: block;
+    padding: 1rem 1.5rem;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tart-orange, 0.85),
+        rgba($color-bittersweet, 0.85)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-space-cadet, 0.85),
+        rgba($color-dark-blue-grey, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-deep-saffron, 1),
+        rgba($color-yellow-orange, 0.85)
+      );
+    }
+  }
+}
+
+.card__details {
+  padding: 2rem;
+
+  ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+
+    li {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-grey-light-2;
+      }
+    }
+  }
+}
+
+// CARD BACK VIEW
+.inner__card-back {
+  &--1 {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-tart-orange, 0.4),
+      rgba($color-bittersweet, 1)
+    );
+  }
+
+  &--2 {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-space-cadet, 0.4),
+      rgba($color-dark-blue-grey, 1)
+    );
+  }
+
+  &--3 {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-deep-saffron, 0.4),
+      rgba($color-yellow-orange, 1)
+    );
   }
 }

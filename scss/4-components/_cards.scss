@@ -8,8 +8,9 @@
 .card {
   background-color: transparent;
   width: 35rem;
-  height: 45rem;
+  height: 50rem;
   perspective: 1000px;
+  border-radius: 0.3rem;
 
   &:hover .inner__card {
     transform: rotateY(180deg);
@@ -40,7 +41,6 @@
   }
 
   &-back {
-    background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
   }
